@@ -2,10 +2,10 @@ a{
     text-decoration: none;
     color: red;
 }
-a:hover{
+a.h6:hover{
     color: darkgreen;
 }
 
-try{
-    color: rgb(69, 252, 14);
+p.context {
+    color: red;
 }
