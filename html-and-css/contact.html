@@ -7,7 +7,8 @@
     <title>Document</title>
 </head>
 <body style="background-color: lemonchiffon;">
-    <h1>Contact page</h1>
+    <h1 style="text-align: center;
+    color: cyan; background-color: darkblue;">Contact page</h1>
     <nav style="text-align:center;">
         <a href="index.html">
             <img src="./tutorial1/img/home_house_icon-icons.com_49851.ico" width="20px"/>
@@ -22,5 +23,23 @@
             <img src="./tutorial1/img/cotact-phone-call-auricular-symbol-in-black_icon-icons.com_56483.ico" width="20px"/>
         </a>
     </nav>
+    <p>you can contact us by e-mail, phone or by filling out the form on the bottom.</p>
+    <br/>
+
+    <ul>
+        <li>phone: +32 489 73 23 45</li>
+        <li>e-mail: mail@contact.com</li>
+    </ul>
+    <form action="/action_page.php" method="get">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="mail">E-mail:</label>
+        <input type="email" id="mail" name="mail"><br><br>
+        <label for="message">Message:</label>
+        <input type="text" id="message" name="message"><br><br>
+        <input type="submit" value="Submit">
+      </form>
 </body>
 </html>
