@@ -1,0 +1,1 @@
+alert('hello, this is an alert in javascript')

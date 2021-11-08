@@ -51,3 +51,8 @@ div{
 #wrapper{
     background-color: gold;
 }
+
+video{
+    object-fit: fill;
+}
+
