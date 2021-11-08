@@ -1,0 +1,17 @@
+.box_one{
+    background-color: red;
+    padding: 40px;
+    border: solid black 4px;
+}
+
+.box_two{
+    background-color: blue;
+    padding: inherit;
+    border: inherit;
+}
+
+.box_tree{
+    background-color: yellow;
+    padding: inherit;
+    border: inherit;
+}

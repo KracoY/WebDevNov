@@ -1,0 +1,53 @@
+span{
+    /* convert inline to block level element*/
+    display: block;
+}
+
+.two{
+    background-color: red;
+    color: yellowgreen;
+    padding: 40px;
+}
+
+.tree{
+    color: lightcyan;
+    background-color: darkblue;
+    padding: 40px;
+}
+
+.custom{
+    background-color: green;
+    color: white;
+    padding: 40px;
+}
+
+.hello{
+    color: thistle;
+    background-color: darkblueé;
+}
+
+div{
+    background-color: red;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+
+}
+
+.child{
+    background-color: darkslategrey;
+    color: lightsalmon;
+    padding: 5em;
+    margin: 1px;
+
+}
+
+/* id */
+#wrapper{
+    background-color: gold;
+}
