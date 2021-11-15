@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(14, 14, 34);
+}
+
+header, img{
+    width: 200px;
+    text-align: left;
+}
+
+header{
+    color: white;
+}
+
+header, h1{
+    text-align: center;
+}
+
+header, nav{
+    text-align: right;
+    text-decoration: none;
+}

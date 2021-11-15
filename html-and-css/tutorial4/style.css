@@ -1,0 +1,51 @@
+/*selectors*/
+
+* {
+    /* to select everything us * star */
+    background-color: darkslateblue;
+}
+
+body, html {
+    /* reset default spacing values*/
+    padding: 0;
+    margin: 0;
+}
+
+.row {
+    border: 1px solid black;
+    padding: 1em;
+    background-color: rgb(21, 255, 0);
+}
+
+#maincontainer {
+    background-color: gray;
+    /*border: 1px solid red;*/
+    /* border-color:red */
+
+    border-bottom-color:red;
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    padding: 10px;
+}
+
+input[name=username] {
+    /*select tagname by attribute name/value */
+    background-color: rgb(60, 207, 23);
+    color: rgb(0, 0, 0);
+}
+
+li {
+    color: red;
+    list-style-type: none;
+}
+
+li[name=item] {
+    color: green;
+    list-style-type: circle;
+}
+
+#maincontainer > .row > .col:nth-child(2){
+    background-color: maroon !important;
+    padding: 3px;
+
+}
