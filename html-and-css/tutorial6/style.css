@@ -1,0 +1,71 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(17, 16, 15);
+    color: white;
+}
+
+.container {
+    padding: 1em;
+    /* max-width: 500px; */
+}
+
+.container>p {
+    column-count: 3;
+    column-gap: 2em;
+    column-rule-style: dashed;
+    column-rule-color: orangered;
+    /* border-width: 20px; */
+    max-height: 500px;
+    max-width: 700px;
+    border-image: url(https://www.quantumuniverse.nl/app/uploads/2019/09/matrix.jpg) 30 round;
+    border-style: solid;
+    border-width: 4em;
+}
+
+.box {
+    max-width: 100px;
+    padding: 10em;
+    background-color: indianred;
+    position: absolute;
+}
+
+.box1 {
+    background-color: indianred;
+    top: 80px;
+    left: 80px;
+    z-index: 4;
+    text-transform: uppercase;
+    transition: all 2s;
+    transition-timing-function: ease-in-out;
+}
+
+.box1:hover {
+    width: 300px;
+    left: 300px;
+}
+
+.box2 {
+    background-color: indigo;
+    top: 60px;
+    left: 60px;
+    z-index: 3;
+}
+
+.box3 {
+    background-color: lime;
+    top: 40px;
+    left: 40px;
+    z-index: 2;
+}
+
+.box4 {
+    background-color: orange;
+    top: 20px;
+    left: 20px;
+    /* border-radius: 10em; */
+    z-index: 1;
+}

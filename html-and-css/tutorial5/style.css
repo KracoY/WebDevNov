@@ -1,0 +1,39 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(34, 32, 32);
+}
+
+.container{
+    padding: 1em;
+    color: white;
+}
+
+.myIcon{
+    font-size: 30pt;
+}
+
+.btn{
+    padding: 1em;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn-red{
+    background-color: red;
+}
+
+.btn-yellow{
+    background-color: yellow;
+    color: black;
+
+}
+
+.btn-orange{
+    background-color: orange;
+    color: black;
+}
