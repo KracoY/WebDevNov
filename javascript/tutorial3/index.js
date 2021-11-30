@@ -182,7 +182,7 @@ result = student[3].name != undefined ? (student[3].age >= 18 ? 'He is allowed t
 
 // if else condition
 
-if (1 === 1) {
+/*if (1 === 1) {
     console.log('hello world')
 }
 
@@ -193,8 +193,86 @@ if (student[0].name === 'Jack' && student[0].age >= 18) {
 if (student[0].age >= 18 && student[0].age <= 30) {
     // 18-30
     console.log('Young man!')
+}*/
+
+
+var person = {
+    firstname: 'Joe',
+    lastname: 'Dalton',
+    age: 30,
+    livingplace: 'Puurs',
+    isStudent: true,
+    email: 'joe@dalton.com'
 }
 
-console.log(student.length)
-console.log(result)
+/*if (person.age >= 18 && person.livingplace === 'Aalst' && person.isStudent === true) {
+    console.log(person) //return true
+} else if (person.lastname === 'Dalton') {
+    console.log("Lastname is correct")
+}*/
+
+
+//console.log(student.length)
+//console.log(result)
 // console.log(result1)
+
+
+
+//var userInput = prompt ('Please enter a number')
+
+//var a = 1+ number('1') //2
+
+//console.log(typeof number(userInput))
+
+
+
+var number = prompt('Please enter a number')
+var finNumber
+/*if (number % 2 == 0) {
+    console.log('This is an even number')
+} else {
+    console.log('This is an odd number')
+}*/
+
+if (isNaN(number)) {
+    alert('This is not a number, put in a number')
+    number = prompt('Please enter a number')
+} else if (number % 2 == 0) {
+    console.log('This is an even number')
+} else if (number % 2 == 1) {
+    console.log('This is an odd number')
+}
+
+if (number % 2 == 0) {
+    console.log('This is an even number')
+} else {
+    console.log('This is an odd number')
+}
+
+
+if (isNaN(number) ==false) {
+    console.log(number)
+}
+
+
+if (number < 20) {
+    console.log('This number is smaller than 20')
+} else if (number < 30 && number > 20) {
+    console.log('This number is smaller than 30 but it is bigger than 20')
+} else if (number < 40 && number > 30) {
+    console.log('This number is smaller than 40 but it is bigger than 30')
+} else if (number < 50 && number > 40) {
+    console.log('This number is smaller than 50 but it is bigger than 40')
+} else if (number < 60 && number > 50) {
+    console.log('This number is smaller than 60 but it is bigger than 50')
+} else if (number < 70 && number > 60) {
+    console.log('This number is smaller than 70 but it is bigger than 60')
+} else if (number < 80 && number > 70) {
+    console.log('This number is smaller than 80 but it is bigger than 70')
+} else if (number < 90 && number > 80) {
+    console.log('This number is smaller than 90 but it is bigger than 80')
+} else if (number < 100 && number > 90) {
+    console.log('This number is smaller than 100 but it is bigger than 90')
+} else if (number >= 100) {
+    console.log('THis number is equal or bigger than 100')
+}
