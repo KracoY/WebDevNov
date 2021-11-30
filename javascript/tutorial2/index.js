@@ -92,26 +92,26 @@ a = a + a // 20
 a = a * 2 // 20*2=40
 
 //power
-result = Math.pow(9,2);
+result = Math.pow(9, 2);
 
-console.log("a result",a)
+console.log("a result", a)
 // console.log(result)
 
 //string (text)
 var result;
-result= 10 //number
+result = 10 //number
 result = true //true or false
-result= "string" + 4
+result = "string" + 4
 
 var nr1 = 5; // number
 var nr2 = "5"; //string (text)
-var res = nr1+nr2 //5 5
+var res = nr1 + nr2 //5 5
 console.log(res)
 
 //array
-const myDB = ["yuruk","sameer","khaled","fatema","balin"] //array-object
-const db= ['1','2','3',true,5,_number1]
-myDB[1]="ender"
+const myDB = ["yuruk", "sameer", "khaled", "fatema", "balin"] //array-object
+const db = ['1', '2', '3', true, 5, _number1]
+myDB[1] = "ender"
 console.log(myDB)
 
 
@@ -120,8 +120,8 @@ let student = {
     name: 'ender',
     lastname: 'Yuruk',
     age: 22,
-    isStudent:true,
-    score:[70, 80, 90, 100]
+    isStudent: true,
+    score: [70, 80, 90, 100]
 }
 
 //exersize 
@@ -129,7 +129,7 @@ let exersize = {
     name: 'ender',
     lastname: 'Yuruk',
     age: 22,
-    student:  true,
+    student: true,
     birthday: '25/06/1999',
     location: 'puurs'
 }
