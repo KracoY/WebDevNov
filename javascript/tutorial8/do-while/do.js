@@ -43,6 +43,6 @@ while(ratelimit>0){
         console.log('Welcome user!')
         break;
     }else{
-        console.log(`You've ${ratelimit} attempts left.`);
+        console.log(`You've ${ratelimit} attempts f left.`);
     }
 }
