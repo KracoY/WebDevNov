@@ -41,7 +41,7 @@
 
 //Global variable
 
-// var companyName = 'intecBrussel' //global variable
+//var companyName = 'intecBrussel' //global variable
 
 // function GetNumber(){
 //     var company = 'intec' // local variable

@@ -1,9 +1,9 @@
 
 let usernames = [
     {
-        username: "Ender",
+        username: "E",
         role: "admin",
-        password: "Ender01"
+        password: "E1"
     },
     {
         username: "Atilla",
@@ -55,20 +55,23 @@ let usernames = [
 var userinput = document.getElementById("username")
 var pass = document.getElementById("password")
 var btn = document.getElementById("button")
-
+var wel = document.getElementById("welcome")
 
 function userCheck(){
     console.log(userinput.value,pass.value)
     usernames.forEach(function (user) {
         if(user.username == userinput.value && pass.value == user.password && user.role == "admin"){
-            alert(`Welcome admin ${userinput}`)
+            wel.innerHTML= `Welcome admin ${userinput}`;
             console.log(`Welcome admin ${userinput}`)
+
         }else if(user.username == userinput.value && pass.value == user.password && user.role == "user"){
-            alert(`Welcome user ${userinput}`)
+            wel.innerHTML = `Welcome user ${userinput}`;
             console.log(`Welcome user ${userinput}`)
         }else{
-            alert("e-mail and or password is wrong")
-            console.log("e-mail and or password is wrong");
+            //alert("e-mail and or password is incorrect")
+            console.log("e-mail and or password is incorrect")
+            wel.innerHTML = "e-mail and or password is incorrect";
         }
     })
 }
+
