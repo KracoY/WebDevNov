@@ -249,6 +249,16 @@ for (singleobj in people ) {
     
 }
 
+for (singleobj in people ) {
+    //console.log(singleobj)
+    let obj = people[singleobj]
+    //console.log(obj)
+    const { id, name, username, email, address:{street,suite,city,zipcode},phone,website,company:{name:_name,catchPhrase,bs}} = obj
+
+    console.log(id, name, username, email, street,_name);
+    
+}
+
 
 
 
