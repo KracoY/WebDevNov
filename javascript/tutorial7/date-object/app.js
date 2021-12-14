@@ -17,7 +17,7 @@ result = date.toLocaleString('nl-Be', options)
 
 result = date.getSeconds();
 result = date.getMinutes(); //10:15
-result = `${ date.getHours() }:${ date.getMinutes()}:${date.getSeconds()}`
+result = `${ date.getHours()}:${ date.getMinutes()}:${date.getSeconds()}`
 
 // setInterval(function(){
 //     console.log('Hello world');

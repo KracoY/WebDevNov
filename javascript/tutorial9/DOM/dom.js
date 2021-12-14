@@ -1,3 +1,5 @@
+// DOM
+
 let value;
 
 value = window
