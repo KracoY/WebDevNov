@@ -1,25 +1,25 @@
-// let people=[
-//     {
-//         name:"ender",
-//         age:22
-//     },
-//     {
-//         name:"joe",
-//         age:22
-//     },
-//     {
-//         name:"haktan",
-//         age:22
-//     },
-//     {
-//         name:"dirk",
-//         age:22
-//     },
-//     {
-//         name:"Atilla",
-//         age:22
-//     }
-// ]
+/*let people=[
+    {
+        name:"ender",
+        age:22
+    },
+    {
+        name:"joe",
+        age:22
+    },
+    {
+        name:"haktan",
+        age:22
+    },
+    {
+        name:"dirk",
+        age:22
+    },
+    {
+        name:"Atilla",
+        age:22
+    }
+]*/
 
 // for(singleobject in people){
 //     people[singleobject].age=99

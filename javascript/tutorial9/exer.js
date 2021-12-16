@@ -249,6 +249,9 @@ for (singleobj in people ) {
     
 }
 
+
+
+
 for (singleobj in people ) {
     //console.log(singleobj)
     let obj = people[singleobj]

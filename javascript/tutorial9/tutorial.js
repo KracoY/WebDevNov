@@ -103,6 +103,3 @@ console.log(a1, b1, c1, d1);
 
 console.log(item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11);
 item6()
-
-
-

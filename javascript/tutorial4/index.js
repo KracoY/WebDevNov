@@ -126,21 +126,21 @@ console.log(myStudents)
 // let getNettoSalary =  (2600*30)/100 //exact tax amount
 // console.log(2600-getNettoSalary)
 
-function getNettoSalary(bruto ,tax){
-    
-    let taxamount = (bruto*tax)/100 //tax amount 500
-   //console.log(taxamount)
+function getNettoSalary(bruto, tax) {
+
+    let taxamount = (bruto * tax) / 100 //tax amount 500
+    //console.log(taxamount)
 
     return bruto - taxamount //
 }
 
-console.log(getNettoSalary(2600,30))
-console.log(getNettoSalary(265400,30))
-console.log(getNettoSalary(1800,25))
+console.log(getNettoSalary(2600, 30))
+console.log(getNettoSalary(265400, 30))
+console.log(getNettoSalary(1800, 25))
 
 
 
-function verbruik(km, liter){
+function verbruik(km, liter) {
 
     let gemidel = (km / 10)
     return liter / gemidel

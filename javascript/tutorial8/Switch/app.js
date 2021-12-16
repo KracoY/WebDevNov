@@ -65,7 +65,7 @@ let today = new Date().getDay()
 
 console.log(today);
 
-switch(today){
+switch (today) {
     case 0:
         console.log('Zondag');
         break;

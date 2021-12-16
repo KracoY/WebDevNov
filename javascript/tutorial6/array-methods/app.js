@@ -31,18 +31,18 @@ push
 
 //concat
 var n1 = [1,2,3,4,5,6,7]
-//var n2= [8,9]
-result=n1.concat([8,9])
+var n2= [8,9]
+result=n1.concat(n2)
 
-var names=['Ender','Khaled','Romeo', 'Atilla'];
-var randomNumbers = [234,234,56,67,3,7,25,736,34653,76,8]
-//result = names.splice(2,1)
+// var names=['Ender','Khaled','Romeo', 'Atilla'];
+// var randomNumbers = [234,234,56,67,3,7,25,736,34653,76,8]
+// //result = names.splice(2,1)
 
-//result = names.sort()
+// //result = names.sort()
 
-result = randomNumbers.sort(function(a,b){return a-b})
+// result = randomNumbers.sort(function(a,b){return a-b})
 
-//forEach
-randomNumbers.forEach
+// //forEach
+// randomNumbers.forEach
 
 console.log(result);
