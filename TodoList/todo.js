@@ -1,3 +1,12 @@
+/*
+    <li class="list-group-item d-flex justify-content-between">
+                        My todo titleDELETE ME
+                        <a href="#" class="delete-item"> 
+                            <i class="fa fa-remove"></i> 
+                        </a>
+                    </li>
+*/
+
 const todoInput = document.querySelector('#todo')
 const addTodoBtn = document.querySelector('.addBtn')
 const addTodoBodyForAlert = document.querySelector('.addTodoBody')
@@ -12,35 +21,41 @@ function responseMessage(alertType, message) {
     divAlert.setAttribute('role', 'alert')
     divAlert.innerHTML = `${message}`
     addTodoBodyForAlert.appendChild(divAlert)
-    setTimeout(function(){
+    setTimeout(function () {
         divAlert.remove();
-    },2000)
+    }, 2000)
 }
 
-filter.addEventListener('keyup',function(e){
-  //  console.log(filter.value)
+filter.addEventListener('keyup', function (e) {
+    //  console.log(filter.value)
     //
     const listofTodos = document.querySelectorAll('.list-group-item')
-    listofTodos.forEach(function(todo){
-       // console.log(todo)
-       let filterValue = filter.value
+    listofTodos.forEach(function (todo) {
+        // console.log(todo)
+        let filterValue = filter.value
         let todoTitle = todo.textContent.trim()
-        todoTitle = todoTitle.substring(0,todoTitle.length-2)
+        todoTitle = todoTitle.substring(0, todoTitle.length - 2)
         console.log(todoTitle)
         console.log(filterValue.indexOf(todoTitle))
-        if(filterValue.indexOf(todoTitle) === -1){
-            todo.setAttribute('style','display:none !important')
-        }else{
-            todo.setAttribute('style','display:flex!important;')
+        if (filterValue != "") {
+            if (filterValue.indexOf(todoTitle) === -1) {
+                todo.setAttribute('style', 'display:none !important')
+            } else {
+                todo.setAttribute('style', 'display:flex!important;')
+            }
+        } else {
+            // filter value empty here
+            todo.setAttribute('style', 'display:flex!important;')
         }
+
     })
-   // console.log(listofTodos)
+    // console.log(listofTodos)
 })
 
-ListGroupOfTodos.addEventListener('click',(event)=>{
+ListGroupOfTodos.addEventListener('click', (event) => {
     event.preventDefault();
     // addeventlistener scope
-    if(event.target.className === 'fa fa-remove'){
+    if (event.target.className === 'fa fa-remove') {
         // run here
         let findParent = event.target.parentElement
         findParent = event.target.parentElement.parentElement.parentElement
@@ -51,7 +66,7 @@ ListGroupOfTodos.addEventListener('click',(event)=>{
 
 })
 
-
+let todos = []
 addTodoBtn.addEventListener('click', e => {
     e.preventDefault();
 
@@ -61,10 +76,10 @@ addTodoBtn.addEventListener('click', e => {
     }
     console.log(obj)
 
-    if(todoInput.value !=""){
-        responseMessage('success','Todo added')
+    if (todoInput.value != "") {
+        responseMessage('success', 'Todo added')
         // success
-        ListGroupOfTodos.innerHTML+=`
+        ListGroupOfTodos.innerHTML += `
         <li class="list-group-item d-flex justify-content-between">
         ${todoInput.value} - ${todoDate.value}
         <a href="#" class="delete-item"> 
@@ -72,10 +87,29 @@ addTodoBtn.addEventListener('click', e => {
         </a>
     </li>
         `
+        todos.push(obj)
+        // addthisDataToStorage(sendobj)
+        console.log(todos)
 
-    }else{
-        responseMessage('danger','Error!')
+        localStorage.setItem('todos', JSON.stringify(todos))
+    } else {
+        responseMessage('danger', 'Error!')
     }
-    
+
 
 })
+
+
+window.addEventListener('DOMContentLoaded', (event) => {
+    let todos = JSON.parse(localStorage.getItem('todos'))
+    todos.forEach(todo => {
+        ListGroupOfTodos.innerHTML += `
+        <li class="list-group-item d-flex justify-content-between">
+        ${todo.todo_title} - ${todo.todo_date}
+        <a href="#" class="delete-item"> 
+            <i class="fa fa-remove"></i> 
+        </a>
+    </li>
+        `
+    })
+});
