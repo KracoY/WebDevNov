@@ -1,0 +1,23 @@
+{
+  "name": "webdevnov",
+  "version": "1.0.0",
+  "description": "[3 subjects 2 weeks]\r - Html5\r - Css\r - Bootstrap4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KracoY/WebDevNov.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KracoY/WebDevNov/issues"
+  },
+  "homepage": "https://github.com/KracoY/WebDevNov#readme",
+  "dependencies": {
+    "firebase": "^9.6.3"
+  }
+}
