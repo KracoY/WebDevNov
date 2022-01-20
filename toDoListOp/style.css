@@ -100,7 +100,7 @@ body {
   outline: none;
   color: hsl(234, 39%, 85%);
   font-size: 18px;
-}
+}  
 
 .new-input input::placeholder {
   color: hsl(233, 14%, 35%);

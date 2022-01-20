@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/KracoY/WebDevNov#readme",
   "dependencies": {
-    "firebase": "^9.6.3"
+    "firebase": "^9.6.3",
+    "sweetalert2": "^11.3.6"
   }
 }
